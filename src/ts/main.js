@@ -1,6 +1,3 @@
-// main.js
-// main.js
-
 const get = async url => {
     try {
       const response = await fetch(url);
