@@ -1,3 +1,15 @@
+const findItem = async () => {
+    const url = "./src/modules/products.json";
+    try {
+      const data = await get(url);
+      return data.products;
+    } catch (error) {
+      console.error('There was an error fetching the products:', error);
+      throw error;
+    }
+  };
+
+
 const get = async url => {
     try {
       const response = await fetch(url);
@@ -13,16 +25,7 @@ const get = async url => {
     }
   };
   
-  const findItem = async () => {
-    const url = "./src/modules/products.json";
-    try {
-      const data = await get(url);
-      return data.products;
-    } catch (error) {
-      console.error('There was an error fetching the products:', error);
-      throw error;
-    }
-  };
+ 
   
   // Usage of findItem function
   findItem()
