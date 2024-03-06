@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=B612+Mono&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 .type--A {
-  --line_color: #555555 ;
+  --line_color: #000000 ;
   --back_color: #FFECF6 ;
 }
 
@@ -12,10 +12,11 @@
   text-decoration: none;
   font-size: 14px;
   font-weight: bold;
-  color: var(--line_color);
+  color: #ea910b;
   letter-spacing: 2px;
   transition: all 0.3s ease;
 }
+
 
 .button__text {
   display: flex;
@@ -277,7 +278,7 @@
 .hero-section {
   position: relative;
   height: 100vh;
-  background: url("/Ecommerce/img/hero.jpg") center/cover no-repeat;
+  background: url("/./img/hero.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -498,6 +499,10 @@ button:hover {
   flex-wrap: wrap;
 }
 
+.submitFormButton {
+  margin: 20px 0px;
+}
+
 .image {
   width: 150px;
   height: 200px;
@@ -518,6 +523,15 @@ button:hover {
   border-radius: 10px;
   transition: 0.2s;
 }
+
+.item div button{
+  margin: 0px 4px;
+}
+
+.producdtButtonContainer button {
+  margin: 0px 4px;
+}
+
 .item:hover {
   transform: scale(1.01);
   filter: drop-shadow(0 0.2rem 0.2rem rgba(41, 41, 40, 0.6666666667));
